@@ -1,0 +1,8 @@
+thead tr {
+    background-color: green;
+}
+
+tbody tr:hover {
+    background-color: dimgray;
+
+}
