@@ -8,8 +8,13 @@
 </head>
 <style>
     table,tbody,tr,td{
-         border: 1px solid black;
+        
          border-collapse: collapse;
+    }
+    table {
+   border-style: solid;
+   border-width: 10px;
+   border-color: orange;
     }
     td{
         padding: 25px;
@@ -17,8 +22,22 @@
     thead,tbody{
         background-color: orange;
     }
-    tr,td:nth-child(odd){
+    table>tbody>tr:nth-child(odd)>td:nth-child(odd){
         background-color: black;
+    }
+    table>tbody>tr:nth-child(odd)>td:nth-child(even){
+        background-color: white;
+    }
+
+    table>tbody>tr:nth-child(even)>td:nth-child(even){
+        background-color: black;
+    }
+
+    table>tbody>tr:nth-child(even)>td:nth-child(odd){
+        background-color: white;
+    }
+    .hi{
+
     }
 </style>
 <body>
@@ -39,7 +58,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>A</th>
+                    <th class="hi">A</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -50,7 +69,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>B</th>
+                    <th class="hi">B</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -61,7 +80,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>C</th>
+                    <th class="hi">C</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -72,7 +91,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>D</th>
+                    <th class="hi">D</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -83,7 +102,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>E</th>
+                    <th class="hi">E</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -94,7 +113,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>F</th>
+                    <th class="hi">F</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -105,7 +124,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>G</th>
+                    <th class="hi">G</th>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -116,7 +135,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <th>H</th>
+                    <th class="hi">H</th>
                     <td></td>
                     <td></td>
                     <td></td>
