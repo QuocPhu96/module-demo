@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registerschools</title>
+</head>
+<style>
+    th{
+         background-color: palegreen;
+         color: blue;
+         }
+    table,tbody,tr,td{
+        background-color: khaki;
+    }
+    .phu{
+        color: blue;
+    }
+    .pp{
+        border-radius: 1%;
+    }
+    
+</style>
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr align="left">
+                    <th colspan="2">ĐĂNG KÝ HỌC VIÊN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="fullname">fullname</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fullname" class="pp" style="width: 200px;">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="phu">
+                        <label for="ngày sinhv">ngày sinh</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ngày sinh" class="pp">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="phu">
+                        <label for="Giới tính">Giới tính</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="Giới tính" name="1" class="pp">Nam
+                        <input type="radio" id="Giới tính" name="1" class="pp">Nữ
+                    </td>   
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="phu" align="top">
+                        <label for="Địa chỉ">Địa chỉ</label >
+                    </td>
+                    <td>
+                        <textarea name="Địa chỉ" id="Địa chỉ" cols="20" rows="4"></textarea class="pp">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="phu">
+                        <label for="Lớp">Lớp</label>
+                    </td>
+                    <td>
+                        <Select name="Lớp" id="Lớp" class="pp">
+                            <option value="">--Chọn Lớp--</option>
+                            <option value="">Lớp 10</option>
+                            <option value="">Lớp 11</option>
+                            <option value="">Lớp 12</option>
+                        </Select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="phu">
+                        <label for="Email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="Email" class="pp">
+                    </td> 
+                </tr>
+                <tr>
+                    <td class="phu">
+                        <label for="Điện thoại">Điện thoại</label>
+                    </td>
+                    <td>
+                        <input type="number" id="Điện thoại" class="pp">
+                    </td>   
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng Ký" class="pp">
+                        <input type="reset" value="Nhập lại" class="pp">
+                    </td>   
+                </tr>
+            </tbody>
+        </table>
+    </form> 
+</body>
+</html>

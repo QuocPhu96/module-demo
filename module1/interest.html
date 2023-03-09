@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>interest</title>
+    <link rel="stylesheet" href="interest.css">
 </head>
 <body>
     <form action="">
         <table>
-            <tr align="center">
-                <caption>SỞ THÍCH CỦA BẠN</caption>
-            </tr>
-            <tr>
-                <td>Họ và tên</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Sở thích</td>
-                <td><input type="radio">Thể thao</td>
-                <td><input type="radio">Âm Nhạc</td>
-                <td><input type="radio">Đọc sách</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="radio">Lướt Web</td>
-                <td><input type="radio">Chơi game</td>
-                <td><input type="radio">Điện ảnh</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="radio">Du lịch</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit">Gửi Thông Tin</td>
-                <td><input type="submit">Nhập lại</td>
-            </tr>
+            <thead>
+                <tr align="center">
+                    <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td colspan="3"><input type="text" style="width: 230px;" class="ppp"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td colspan="3"><input type="text" style="width: 150px;" class="ppp"></td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td><input type="radio"><span class="orange">Thể thao</span></td>
+                    <td><input type="radio"><span class="orange">Âm nhạc</span></td>
+                    <td><input type="radio"><span class="orange">Đọc Sách</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td width="100px"><input type="radio"><span class="orange">Lướt Web</span></td>
+                    <td width="100px"><input type="radio"><span class="orange">Chơi game</span></td>
+                    <td><input type="checkbox"><span class="orange">Điện ảnh</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio"><span class="orange">Du lịch</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Gửi thông tin" class="ppp"></td>
+                    <td><input type="reset" value="Nhập lại" class="ppp"></td>
+                </tr>
+            </tbody>
         </table>
     </form>
 </body>

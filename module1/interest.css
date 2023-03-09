@@ -1,0 +1,19 @@
+thead {
+    background-color: orangered;
+    color: aliceblue;
+}
+td {
+    color: blue;
+}
+.orange {
+    color: orange;
+    border-radius: 1%;
+}
+table {
+   border-style: solid;
+   border-width: 10px;
+   border-color: rgb(169, 242, 235);
+}
+.ppp{
+    border-radius: 1%;
+}
