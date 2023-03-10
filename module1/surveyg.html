@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gray{
+        background-color: darkgrey;
+    }
+    .vuong input{
+        border-radius: 1%;
+    }
+    .xam{
+        background-color:rgb(183, 183, 177);
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <h2>Market Research survey</h2>
+            <tr>
+                <td colspan="2">please take a few moments to complete this satisfaction survey</td>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">what is your age range</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="age" id="age" style="width: 350px;">
+                        <option value="">18-24</option>
+                        <option value="">25-34</option>
+                        <option value="">35-50</option>
+                        <option value="">50+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">what is your yearly income range?</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="income" id="income" style="width: 350px;">
+                        <option value="">$0 - $25,000</option>
+                        <option value="">$25,001 - $50,000</option>
+                        <option value="">$50,001 - $100,000</option>
+                        <option value="">100,000+</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">Gender identity</th>
+            </tr>
+            <tr>
+                <td colspan="2" style="border-radius: 1%;">
+                    <input type="radio" name="1">male <br>
+                    <input type="radio" name="1">Female <br>
+                    <input type="radio" name="1">Nonbinary <br>
+                    <input type="radio" name="1">Other
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">which of the following products have your purchased in the last 2 months. Please check all that apply</th>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">
+                    <input type="checkbox">product 1 <br>
+                    <input type="checkbox"> product 2 <br>
+                    <input type="checkbox"> product 3
+                </th>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">how often would you use our new product</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="radio" name="3"> daily <br>
+                    <input type="radio" name="3"> Weekly <br>
+                    <input type="radio" name="3"> Monthly
+                </td>
+            </tr>
+            <tr>
+                <th align="left" colspan="2">what features would you like to see in the new product</th>
+            </tr>
+            <tr>
+                <td width="165px">
+                    $ <input type="text">.
+                </td>
+                <td>
+                    <input type="text" style="width: 20px;">
+                </td>
+            </tr>
+            <tr>
+                <td> Dollars</td>
+                <td>Cents</td>
+            </tr>
+            <tr>
+                <th colspan="2" align="left">What features would you like to see in the new product</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="features " id="features " cols="73" rows="8"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">please rate your lever of the agreement with the following statements</td>
+            </tr>
+            <table border="1" aria-colspan="2">
+                <tr class="gray">
+                    <td></td>
+                    <td>strongly Disaree</td>
+                    <td width="90px">Disagree</td>
+                    <td width="90px">agree</td>
+                </tr>
+                <tr>
+                    <th width="300px">Our products are priced fairly.</th>
+                    <td align="center"><input type="radio" name="4"><br>1</td>
+                    <td align="center"><input type="radio" name="4"><br>2</td>
+                    <td align="center"><input type="radio" name="4"><br>3</td>
+                </tr>
+                <tr class="xam">
+                    <th>Our products are hight quality.</th>
+                    <td align="center"><input type="radio" name="5"><br>1</td>
+                    <td align="center"><input type="radio" name="5"><br>2</td>
+                    <td align="center"><input type="radio" name="5"><br>3</td>
+                </tr>
+                <tr>
+                    <th>You would recommend our produt to a friend of coworker</th>
+                    <td align="center"><input type="radio" name="6"><br>1</td>
+                    <td align="center"><input type="radio" name="6"><br>2</td>
+                    <td align="center"><input type="radio" name="6"><br>3</td>
+                </tr>
+            </table>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
