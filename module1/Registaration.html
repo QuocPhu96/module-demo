@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .green{
+        background-color: rgb(32, 226, 32);
+        color: antiquewhite;
+        border-radius: 5%;
+    }
+    form{
+        background-color: rgb(215, 213, 213);
+        width: 600px;
+    }
+</style>
+<body>
+    <form action="">
+        <table>
+            <H2>Student Registaration Form</H2>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="First Name">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="First name" placeholder="Enter your first name" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Last Name">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Last Name" placeholder="Enter your last name" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" placeholder="it should contain @," style="width: 400px;">
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Mobile">Mobile:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="Mobile" placeholder="only 10 digits are alloweb" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="Gender" name="Gender">male
+                        <input type="radio" id="Gender" name="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="date">Date Of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="date" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top">
+                        <label for="Address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea name="Address" id="Address" cols="48" rows="7"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="City">City:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="City" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Area PIN">Area PIN:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Area PIN" style="width: 400px;">
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <label for="State">State:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="State" style="width: 400px;">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Qualification">Qualification</label>
+                    </td>
+                    <td>
+                        <select name="Qualification" id="Qualification">
+                            <option value="">Select Qualification</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="top">
+                        <label for="Specialization">Specialization</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Specialization">Computer Science <br>
+                        <input type="checkbox" id="Specialization">Infomation Technology <br>
+                        <input type="checkbox" id="Specialization">Computer Achitecture <br>
+                        <input type="checkbox" id="Specialization">Tele Communication 
+                    </td>   
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="password" id="password" style="width: 400px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="green" type="submit" value="Registered">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
