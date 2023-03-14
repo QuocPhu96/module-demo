@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascrript</title>
+</head>
+<body>
+    <button onmousemove="this.innerText = new Date()"
+    onmouseout="this.innerText = 'Hover to show datetime'"
+    onclick="alert(this.innerText)"
+    ondblclick="alert('Hello anh em')"
+    >Hover to show datetime</button>
+    <input type="password" value="031297"
+    onfocus="this.type= 'text'"
+    onblur="this.type='password'"
+    >
+    <br>
+    <label for="">password</label>
+    <input id="pw" type="password">
+    <button id="btn" onclick="showPassword()"
+    >show password</button>
+    <script>
+        function showPassword(){
+            if(document.getElementById('pw').type == 'password'){
+                document.getElementById('pw').type = 'text';
+                document.getElementById('btn').innerText = 'hide password'
+            }
+            else{
+                document.getElementById('pw').type = 'password';
+                document.getElementById('btn').innerText = 'hide password'
+            }
+        }
+    </script>
+</body>
+</html>
