@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change money</title>
+</head>
+<style>
+    #btn{
+        background-color: rgb(177, 108, 242);
+        border-radius: 10%;
+    }
+    #Result{
+        color: blue;
+    }
+</style>
+<body>
+        <table>
+        <script src="change_money.js"></script>
+        <tr>
+            <th>
+                <label for="Amount">Amount</label>
+            </th>
+            <th>
+                <label for="fromCurency">From Curency</label>
+            </th>
+            <th>
+                <label for="toCurency">To Curency</label>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="amount">
+            </td>
+            <td>
+                <select name="fromCurency" id="fromCurency" style="width: 100px;">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="toCurency" id="toCurency" style="width: 100px;">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button id="btn" onclick="changeMoney()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="Result" colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
