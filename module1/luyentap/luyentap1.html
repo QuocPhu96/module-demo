@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luyenTap1</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Điểm trung bình</td>
+                <td><input type="number" id="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button onclick="rank()">rank</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td>
+                    <input type="text" id="Result">
+                </td>
+            </tr>   
+        </tbody> 
+    </table>
+
+    <script>
+        function rank() {
+            let number = +document.getElementById('number').value;
+            let Result = "";
+
+            if (number < 0 || number > 10) {
+                Result = "Điền lại điểm";
+            }
+            else if (number >= 9) {
+                Result = "Xuất sắc"
+            }
+            else if (number >= 8) {
+                Result = "Giỏi"
+            }
+            else if (number >=7) {
+                Result = "Khá"
+            }
+            else if (number >=5) {
+                Result = "Trung bình"
+            }
+            else {
+                Result = "Kém"
+            }
+            document.getElementById('Result').value = Result;
+        }
+    </script>
+</body>
+</html>

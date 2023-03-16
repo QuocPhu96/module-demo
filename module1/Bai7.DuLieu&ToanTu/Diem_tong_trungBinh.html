@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="vatLy">Vật lý</label></td>
+                    <td><input type="number" id="vatLy"></td>
+                </tr>
+                <tr>
+                    <td><label for="toan">Toan</label></td>
+                    <td><input type="number" id="toan"></td>
+                </tr>
+                <tr>
+                    <td><label for="sinhHoc">Sinh học</label></td>
+                    <td><input type="number" id="sinhHoc"></td>
+                </tr>
+                <tr>
+                    <td><label for="tong">Tổng</label></td>
+                    <td><input type="text" id="tong"></td>
+                </tr>
+                <tr>
+                    <td><label for="trungBinh">Trung bình</label></td>
+                    <td><input type="text" id="trungBinh"></td>
+                </tr>
+                <tr>
+                     <td><button onclick="rank()">click</button></td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+
+        <script>
+            function rank() {
+                let vatLy = +document.getElementById('vatLy').value;
+                let toan = +document.getElementById('toan').value;
+                let sinhHoc = +document.getElementById('sinhHoc').value;
+                let tong = "";
+                let trungBinh = "";
+                
+                if(vatLy <= 0 || toan <= 0 || sinhHoc <= 0){
+                        alert("vui long nhập lại")
+                    }
+                     else {
+                        tong = vatLy + toan +trungBinh;
+                        trungBinh = (vatLy + toan + sinhHoc) / 3
+                    }
+                    document.getElementById('tong').value = tong;
+                    document.getElementById('trungBinh').value = trungBinh;
+            }
+        </script>
+</body>
+</html>
