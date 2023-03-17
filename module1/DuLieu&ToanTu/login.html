@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <table>
+        <h2>Tài khoản Admin</h2>
+        <tbody>
+            <tr>
+                <td>
+                    Tài khoản:
+                </td>
+                <td>
+                    <input id="taiKhoan" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mật khẩu:
+                </td>
+                <td>
+                    <input id="matKhau" type="password">
+                </td>
+                <td>
+                    <button onclick="show()" id="show">show</button>
+                </td>
+            </tr>   
+            <tr>
+                <td colspan="2" align="right">
+                    <button onclick="dangNhap()">Đăng nhập</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function dangNhap() {
+            let taiKhoan = document.getElementById('taiKhoan').value;
+            let matKhau = document.getElementById('matKhau').value;
+            let result ;
+            if(taiKhoan == "admin"){
+                if(matKhau == "TheMaster") {
+                   result = "welcome";
+                }
+                else if (matKhau == "null") {
+                   result = "Canceled";
+                }
+                else { result = "Wrong password"}
+            }
+            else if(taiKhoan == "null"){
+                result = "Canceled"
+            }
+            else {"I don't know you";}
+            alert(result)
+        }
+        function show(){
+            if(document.getElementById('matKhau').type == 'password'){
+                document.getElementById('matKhau').type = 'text';
+                document.getElementById('show').innerText = 'close';
+            }
+            else{
+                document.getElementById('matKhau').type = 'password';
+                document.getElementById('show').innerText = 'show';
+            }
+        }
+    </script>
+</body>
+</html>
