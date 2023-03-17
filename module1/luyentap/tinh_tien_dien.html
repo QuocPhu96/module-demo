@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <h2>Tinh tiền điện</h2>
+        <tbody>
+            <tr>
+                <td>
+                    <input id="kWh" type="number" placeholder="Điền số kWh">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <button onclick="kick()">click</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="result" placeholder="hiển thị số tiền"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function kick() {
+            // let kWh = Number(document.getElementById('kWh').value);
+            // let result = "";
+
+            // if(kWh < 0) {
+            //     result = "Số kWn không hợp lệ";
+            // }
+            // else if(kWh <= 50) {
+            //     result = kWh * 1678;
+            // }
+            // else if(kWh <= 100) {
+            //     result = 50 * 1678 + (kWh - 50) * 1734;
+            // }
+            // else if(kWh <= 200) {
+            //     result = 50 * 1678 + 50 * 1734 + (kWh - 100) * 2014;
+            // }
+            // else if(kWh <= 300) {
+            //     result = 50 * 1678 + 50 * 1734 + 100 * 2014 + (kWh - 100) * 2536;
+            // }
+            // else if(kWh <= 400) {
+            //     result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 +(kWh - 100) * 2834;
+            // }
+            // else {
+            //     result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 +(kWh -100) * 2927;
+            // }
+            // document.getElementById('result').value = result;
+
+            // switch (true) {
+            //     case (kWh < 0): {
+            //         result = "Điền lại kWh";
+            //         break;
+            //     }
+            //     case ( kWh <= 50): {
+            //         result = kWh * 1678;
+            //         break;
+            //     }
+            //     case (kWh <= 100): {
+            //         result = 50 * 1678 + (kWh - 50) * 1734;
+            //         break;
+            //     }
+            //     case (kWh <= 200): {
+            //         result = 50 * 1678 + 50 * 1734 + (kWh - 100) * 2014;
+            //         break;
+            //     }
+            //     case (kWh <= 300): {
+            //         result = 50 * 1678 + 50 * 1734 + 100 * 2014 + (kWh - 100) * 2536;
+            //         break;
+            //     }
+            //     case (kWh <= 400): {
+            //         result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 +(kWh - 100) * 2834;
+            //         break;
+            //     }
+            //     case (kWh > 400): {
+            //         result = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 +(kWh -100) * 2927;
+            //         break;
+            //     }
+            //     default : {
+            //         result = "không hợp lệ"
+            //         break;
+            //     }
+
+            // }
+            
+            let kWh = Number(document.getElementById('kWh').value);
+            let result = `${(kWh < 0) ? "Hiển thị lại kWh" :
+                            (kWh <= 50) ? kWh * 1678 :
+                            (kWh <= 100) ? 50 * 1678 + (kWh - 50) * 1734 :
+                            (kWh <= 200) ? 50 * 1678 + 50 * 1734 + (kWh - 100) * 2014 :
+                            (kWh <= 300) ? 50 * 1678 + 50 * 1734 + 100 * 2014 + (kWh - 100) * 2536 :
+                            (kWh <= 400) ? 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (kWh - 100) * 2834 : 
+                             50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (kWh -100) * 2927 }`
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

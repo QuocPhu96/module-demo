@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"><input id="numberOne" type="number"></td>
+                <td colspan="2"><input id="numberTwo" type="number"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="cong()">Addition(+)</button>
+                </td>
+                <td>
+                    <button onclick="tru()">Subtraction(-)</button>
+                </td>
+                <td>
+                    <button onclick="nhan()">Multiplication(X)</button>
+                </td>
+                <td>
+                    <button onclick="chia()">Division(/)</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div id="result"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function cong() {
+            let numberOne = document.getElementById('numberOne').value;
+            let numberTwo = document.getElementById('numberTwo').value;
+            let result = numberOne + numberTwo;
+            document.getElementById('result').innerHTML = result;
+            
+        }
+        function tru() {
+            let numberOne = document.getElementById('numberOne').value;
+            let numberTwo = document.getElementById('numberTwo').value;
+            let result = numberOne - numberTwo;
+            document.getElementById('result').innerHTML = result;
+        }
+        function nhan() {
+            let numberOne = document.getElementById('numberOne').value;
+            let numberTwo = document.getElementById('numberTwo').value;
+            let result = numberOne * numberTwo;
+            document.getElementById('result').innerHTML = result;
+        }
+        function chia() {
+            let numberOne = document.getElementById('numberOne').value;
+            let numberTwo = document.getElementById('numberTwo').value;
+            let result = Number(numberOne) / Number(numberTwo);
+            document.getElementById('result').innerHTML =('result la :' +result);
+        }
+    </script>
+</body>
+</html>
