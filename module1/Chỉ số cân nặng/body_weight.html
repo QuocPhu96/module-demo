@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>body_weight</title>
+</head>
+<style>
+    table>thead>tr{
+        border-width: 1;
+    }
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>BMI</td>
+                <td>Interpretation</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BMI < 18.5</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5 <= BMI < 25.0</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>25.0 <= BMI < 30.0</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>30.0 <= BMI</td>
+                <td>Obese</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="weight" placeholder="Cân nặng cơ thể">
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="height" placeholder="Chiều cao cơ thể">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="result" placeholder="Kết quả">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <button onclick="lick()">clikk</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function lick() {
+            let weight = +document.getElementById('weight').value;
+            let height = +document.getElementById('height').value;
+            let bmi = weight / (height ^ 2)
+            let result = `${(bmi < 0) ? "Cân nặng không hợp lệ" :
+                            (bmi < 18.5) ? "Underweight" :
+                            (bmi < 25.0) ? "Normal" :
+                            (bmi < 30.0) ? "Overweight" :
+                            "Obese"
+            }`
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
