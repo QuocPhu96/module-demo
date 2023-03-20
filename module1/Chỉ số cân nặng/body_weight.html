@@ -63,14 +63,14 @@
             let weight = +document.getElementById('weight').value;
             let height = +document.getElementById('height').value;
             let bmi = weight / (height ^ 2)
-            let result = `${(bmi < 0) ? "Cân nặng không hợp lệ" :
-                            (bmi < 18.5) ? "Underweight" :
-                            (bmi < 25.0) ? "Normal" :
-                            (bmi < 30.0) ? "Overweight" :
+            let result = `${(bmi < 0) ? "C ân nặng không hợp lệ" :
+                            (bmi < 18.5) ? " Underweight" :
+                            (bmi < 25.0) ? " Normal" :
+                            (bmi < 30.0) ? " Overweight" :
                             "Obese"
             }`
-            document.getElementById('result').value = result;
+           parseInt(document.getElementById('result').value = bmi + result);
         }
     </script>
-</body>
+</body>     
 </html>
