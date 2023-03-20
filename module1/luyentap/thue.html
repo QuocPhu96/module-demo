@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #khung{
+        width: 400px;
+    }
+    #khung2{
+        width: 200px;
+    }
+</style>
+<body>
+    <table border="1" id="khung">
+        <thead>
+            <tr>
+                <th>Thu nhập tháng</th>
+                <th>Số thuế phải nộp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>TN <= 5 tr</td>
+                <td>TN x 5%</td>
+            </tr>
+            <tr>
+                <td>5tr < TN <= 10tr</td>
+                <td>TN x 10% - 0.25</td>
+            </tr>
+            <tr>
+                <td>10tr < TN <= 18tr</td>
+                <td>TN x 15% - 0,75tr</td>
+            </tr>
+            <tr>
+                <td>18tr < TN <= 32tr</td>
+                <td>TN x 20% -3,225tr</td>
+            </tr>
+            <tr>
+                <td>32tr < TN <= 52</td>
+                <td>TN x 25% - 3,25tr</td>
+            </tr>
+            <tr>
+                <td>52tr < TN <= 80tr</td>
+                <td>TN x 30% - 5.85 tr</td>
+            </tr>
+            <tr>
+                <td>TN > 80tr</td>
+                <td>TN x 35% - 9,85tr</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <h2 colspan="2">Tính Số thuế phải nộp trên thu nhập</h2>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <input type="number" id="thuNhap" style="width: 170px;" placeholder="Thu nhập mỗi tháng">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="result" style="width: 170px;" placeholder="Số thuế phải nộp">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button onclick="lick()">lick</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function lick() {
+            let thuNhap = +document.getElementById('thuNhap').value;
+            let result = `${(thuNhap < 0) ? "Số tiền không hợp lệ" :
+                            (thuNhap <= 5000000) ? thuNhap * 5 / 100 :
+                            (thuNhap <= 10000000) ? thuNhap * 10 / 100 - 1000000 * 0.25 :
+                            (thuNhap <= 18000000) ? thuNhap * 15 / 100 - 1000000 * 0.75 :
+                            (thuNhap <= 32000000) ? thuNhap * 20 / 100 - 1000000 * 3.225 :
+                            (thuNhap <= 52000000) ? thuNhap * 25 / 100 - 1000000 * 3.25 :
+                            (thuNhap <= 80000000) ? thuNhap * 30 / 100 - 1000000 * 5.85 :
+                            thuNhap * 35 /100 -1000000 * 9.85
+
+            }`
+            document.getElementById('result').value = result + " VND";
+        }
+    </script>
+</body>
+</html>
