@@ -8,18 +8,16 @@
 </head>
 <body>
     <script>
-        let a = +prompt('Type a number', 0);
-        switch (a) {
-            case  a = 0 : {alert("0")
+        let a = +prompt('Type a number');
+        switch (a) { case  a = 0 : alert("0");
             break;
-            }
-            case a > 0 : {alert("5")
+            case a > 0 : alert(5);
             break;
-            }
-            case a < 0 : {alert("-5")
-            }
-            break
-        }
+            case a < 0 : alert(-5);
+            break;
+            default : "số không hợp lệ";
+                    break;
+    }
     </script>
 </body>
 </html>
