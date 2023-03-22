@@ -1,7 +1,7 @@
-let num = prompt("Enter a number: ");
+let i = prompt("Enter a number : ")
 let total = 0;
-while( num != -1 ) {
-    num = prompt("Enter a number: ");
-    alert(number);
-    total += num;
+while( i <= 10) {
+    i++;
+    total = total + i
+    console.log(total)
  } 
