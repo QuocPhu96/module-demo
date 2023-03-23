@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="Mang.js"></script>
+    <script>
+        let size = +prompt("nhập số lượng phần từ :")
+        let min = +prompt("nhập min")
+        let max = +prompt("nhập max ")
+        let numBers = new Array(size)
+        for(let i = 0; i < numBers.length; i++){
+            numBers[i] = Math.floorMath.random() * ((min * max +1)+min);
+        }
+        document.write(numBers)
+    </script>
 </body>
 </html>
