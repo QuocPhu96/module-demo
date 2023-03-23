@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maTrix</title>
+</head>
+<body>
+    <!-- <script>
+        let maTrix = []
+        for(let i = 0; i < 5; i++){
+            maTrix[i]=[];
+            for(let j = 0; j < 7; i++){
+                maTrix[i][j] = Math.ceil(Math.random() * (70 - 10) + 10);
+            }
+            document.write( maTrix.join(' ')+ "<br/>");
+        }
+        
+       let i = 0;
+        while (i < 5){
+            maTrix[i] = [];
+            for(let j = 0; j < 7; j++){
+                maTrix[j] = Math.floor(Math.random() * 41 + 10);
+            }
+            j = 0;
+            i++;
+            document.write(maTrix.join(' ') + "<br/>")
+        }
+ 
+    </script> -->
+        <script>
+            let maxtrix = [];
+            let text = "";
+            for (let i = 0; i < 5; i++) {
+                maxtrix[i] = [];
+                text += "<br/>";
+                for (let j = 0; j < 7; j++) {
+                    maxtrix[i][j] = Math.floor((Math.random() * (70 - 50 + 1)) + 50) + "&nbsp;"
+                    text += maxtrix[i][j];
+                }
+            }
+            document.write(text);
+        </script>
+</body>
+</html>
