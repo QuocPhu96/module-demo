@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  temperature = +prompt('nhập nhiệt độ')
+        // let min = 20
+        while(temperature < 20){
+            alert('yêu cầu người dùng tăng nhiệt độ');
+            temperature = +prompt('nhập lại nhiệt độ')
+        }
+        // let max = 100
+        while(temperature > 100){
+            alert('yêu cầu người dùng giảm nhiệu độ');
+            temperature = +prompt('nhập lại nhiệt độ')
+        }
+        document.write(temperature);
+    </script>
+</body>
+</html>
