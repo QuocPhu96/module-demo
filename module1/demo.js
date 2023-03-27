@@ -32,17 +32,3 @@ while (count < numbers) {
     num++
 }
 
-// while (count < numbers) {
-//     let isPrime = true;  // giả định rằng num là số nguyên tố
-//     for (let i = 2; i < num; i++) {  // kiểm tra num chia hết cho các số từ 2 đến num - 1
-//         if (num % i === 0) {
-//             isPrime = false;   // num không phải là số nguyên tố
-//             break;             // thoát khỏi vòng lặp for
-//         }
-//     }
-//     if (isPrime) {
-//         document.write(num + ',');   // in số nguyên tố tìm được
-//         count++;            // tăng biến đếm lên 1
-//     }
-//     num++;                // tăng số nguyên kiểm tra lên 1
-// }
