@@ -29,7 +29,7 @@ let carKia = [
     luxury: "CARNIVAL 2.2D PREMIUM  8 GHẾ: 1,349,000,000đ",
     premium1: "CARNIVAL 2.2D PREMIUM  7 GHẾ: 1,399,000,000đ",
     premium2: "CARNIVAL 2.2D SIGNATURE  7 GHẾ: 1,489,000,000đ",
-    turboGT: "CARNIVAL 3.5G SIGNATURE – 7 GHẾ: 1,869,000,000đ",
+    turboGT: "CARNIVAL 3.5G SIGNATURE  7 GHẾ: 1,869,000,000đ",
     detail: "https://kiahue.com/kia-carnival/",
     endow: "Sở hữu ngay Carnival với nhiều chương trình hấp dẫn ưu đãi từ KIA:"
 },
@@ -71,7 +71,7 @@ for(let i = 0; i < carKia.length; i++){
                 <th class="giaXe">${carKia[i].turboGT}</th>
             </tr>
             <tr>
-                <td>
+                <td class="chiTiet">
                     <a class="chiTiet" href="${carKia[i].detail}">XEM CHI TIẾT XE</a>
                 </td>
             </tr>
@@ -81,7 +81,24 @@ for(let i = 0; i < carKia.length; i++){
             <tr>
                 <th class="giaXe">${carKia[i].endow}</th>
             </tr>
-        </tbody>
+
+        </tbody>   
     </table>
     `
 }
+document.getElementById('xeKia').innerHTML +=
+`
+<div>
+    <a href="https://kiavietnam.com.vn/dang-ky-lai-thu/chon-xe">
+        <BUtton class="dangKy">ĐĂNG KÝ LÁI THỬ</BUtton>
+    </a>
+    <div >
+        <a class="traGop" href="https://kiahue.com/mua-xe-kia-tra-gop/">Xem chi tiết chương trình mua xe KIA trả góp ngay.</a>
+    </div>
+</div>
+<div class="cuoiTrang">
+    <p class="camKet">CAM KẾT GIÁ XE KIA HUẾ TỐT NHẤT THỊ TRƯỜNG</p>
+    <p>KIA Phú cam kết bằng văn bản, giá các dòng xe KIA mới nhất tại đại lý thấp nhất thị trường. Nếu phát hiện đơn vị nào báo giá thấp hơn, đại lý sẽ đền bù gấp đôi cho quý khách. (Lưu ý: hệ thống phân phối KIA Thaco được phân vùng, mỗi đại lý chỉ có thể xuất xe trong khu vực tỉnh thành mình phụ trách, không được bán xe ra ngoài khu vực được giao.)</p>
+    <p>Ngoài ra KIA Huế triển khai chương trình “ưu đãi đặc biệt vay mua xe KIA” với lãi suất cạnh tranh, đi kèm nhiều đặc quyền hấp dẫn. Chương trình áp dụng cho tất cả các dòng xe Kia.</p>
+</div>
+`

@@ -40,5 +40,10 @@ for(let i = 0; i < menus.length ; i++){
         </td>
         <td class="fond">${menus[i].price}</td>
     </tr>
+    <div>
+        <th>CAM KẾT GIÁ XE KIA HUẾ TỐT NHẤT THỊ TRƯỜNG</th>
+        <p>KIA Huế cam kết bằng văn bản, giá các dòng xe KIA mới nhất tại đại lý thấp nhất thị trường. Nếu phát hiện đơn vị nào báo giá thấp hơn, đại lý sẽ đền bù gấp đôi cho quý khách. (Lưu ý: hệ thống phân phối KIA Thaco được phân vùng, mỗi đại lý chỉ có thể xuất xe trong khu vực tỉnh thành mình phụ trách, không được bán xe ra ngoài khu vực được giao.)</p>
+        <p>Ngoài ra KIA Huế triển khai chương trình “ưu đãi đặc biệt vay mua xe KIA” với lãi suất cạnh tranh, đi kèm nhiều đặc quyền hấp dẫn. Chương trình áp dụng cho tất cả các dòng xe Kia. Xem chi tiết chương trình mua xe KIA trả góp ngay.</p>
+    </div>
     `
 }

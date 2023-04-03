@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="coffee.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+.container{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+.product-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.product{
+    width: 33.33%;
+    display: block;
+    padding: 10px;
+}
+
+.product-photo>.quick-view{
+    display: none;
+}
+
+.product-photo:hover>.quick-view{
+    display: block;
+}
+
+.quick-view{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+.photo{
+    width: 100%;
+}
+
+.category{
+    color:gray;
+}
+
+.coffee-name{
+    color: red;
+}
+.price{
+    font-weight: bolder;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="product">
+                <div class="product-photo">
+                    <img class="photo"
+                        src="https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6755-scaled-247x296.jpg" alt="">
+                    <p class="quick-view">QUICK VIEW</p>
+                </div>
+                <p class="category">SẢN PHẨM NGUYÊN CHẤT</p>
+                <p class="coffee-name">Cà phê nguyên chất Hạt CULI (đặc biệt)</p>
+                <p class="price">169.000₫</p>
+            </div>
+            <div class="product">
+                <img class="photo" src="https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6755-scaled-247x296.jpg"
+                    alt="">
+                <p class="category">SẢN PHẨM NGUYÊN CHẤT</p>
+                <p class="coffee-name">Cà phê nguyên chất Hạt CULI (đặc biệt)</p>
+                <p class="price">169.000₫</p>
+            </div>
+            <div class="product">
+                <img class="photo" src="https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6755-scaled-247x296.jpg"
+                    alt="">
+                <p class="category">SẢN PHẨM NGUYÊN CHẤT</p>
+                <p class="coffee-name">Cà phê nguyên chất Hạt CULI (đặc biệt)</p>
+                <p class="price">169.000₫</p>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        class Coffee {
+    constructor(photo, name, category, price) {
+        this.photo = photo;
+        this.name = name;
+        this.category = category;
+        this.price = price
+    }
+}
+
+let coffees = [
+    new Coffee("https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6755-scaled-247x296.jpg", "Cà phê nguyên chất Hạt CULI (đặc biệt)", "SẢN PHẨM NGUYÊN CHẤT", 169000),
+    new Coffee("https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6768-scaled-247x296.jpg", "Cà phê nguyên chất Hạt CULI (đặc biệt)", "SẢN PHẨM NGUYÊN CHẤT", 169000),
+    new Coffee("https://capherangxay.vn/wp-content/uploads/2018/07/1C6A6785-scaled-247x296.jpg", "Cà phê nguyên chất Hạt CULI (đặc biệt)", "SẢN PHẨM NGUYÊN CHẤT", 169000),
+]
+
+function renderCoffee() {
+    let row = document.querySelector('.row');
+    // for (let i = 0; i < coffees.length; i++) {
+    //     row.innerHTML += `
+    //         <div class="product">
+    //             <div class="product-photo">
+    //                 <img class="photo"
+    //                     src="${coffees[i].photo}" alt="">
+    //                 <p class="quick-view">QUICK VIEW</p>
+    //             </div>
+    //             <p class="category">${coffees[i].category}</p>
+    //             <p class="coffee-name">${coffees[i].name}</p>
+    //             <p class="price">${formatCurrency(coffees[i].price)}</p>
+    //         </div>
+    //     `
+    // }
+    for (let coffee of coffees) {
+        row.innerHTML += `
+            <div class="product">
+                <div class="product-photo">
+                    <img class="photo"
+                        src="${coffee.photo}" alt="">
+                    <p class="quick-view">QUICK VIEW</p>
+                </div>
+                <p class="category">${coffee.category}</p>
+                <p class="coffee-name">${coffee.name}</p>
+                <p class="price">${formatCurrency(coffee.price)}</p>
+            </div>
+        `
+    }
+}
+
+function formatCurrency(number){
+    return number.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
+}
+renderCoffee();
+    </script>
+</body>
+
+</html>
