@@ -108,10 +108,11 @@ function formatCurrency(number){
     return number.toLocaleString('vi-VN', {style : 'currency', currency : 'VND'});
 }
 function handleaddproductClick(){
-    document.getElementsByClassName('input-table')[0].style.display = "block";
+    document.getElementsByClassName('add-form')[0].style.display = "block";
 }
 function handleAddProduct(){
     let errors = [];
+    d
     let photo = document.getElementById('addPhoto').value;
     let discount = +document.getElementById('addDiscount').value;
     let price = +document.getElementById('priceProduct').value;
