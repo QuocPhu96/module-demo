@@ -326,18 +326,17 @@
         </div> -->
 
     </div>
-    <div class="add-form" style="width: 100%;height: 100%;">
-        <div style="margin: auto;">
-            <form action="" method="submit" class="input-table">
-                <table border="1">
+    <div class="add-form" >
+        <div >
+            <form action="" class="input-table" >
+                <table border="1" >
                     <thead>
                         <th colspan="2">Bảng Thêm Sản Phẩm</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Photo</td>
-                            <td><input id="addPhoto" type="text" required
-                                    oninvalid="this.setCustomValidity('Trường này không được để trống')"></td>
+                            <td><input id="addPhoto" type="text" ></td>
                         </tr>
                         <tr>
                             <td>Discount</td>
@@ -357,7 +356,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <button onclick="handleAddProduct()" id="handleaddProduct" type="submit">add</button>
+                                <button type="button" onclick="handleAddProduct()"  >add</button>
                                 <button type="reset">RESET</button>
                                 <button onclick="closeTable()">CANCEL</button>
                             </td>
@@ -368,8 +367,8 @@
         </div>
     </div>
     <div>
-        <form action="">
-            <table border="1" class="fix-table">
+        <form action="" class="fix-table">
+            <table border="1" >
                 <thead>
                     <th colspan="2">Bảng Thêm Sửa Phẩm</th>
                 </thead>
@@ -397,7 +396,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <button onclick="handleFixProduct()">OK</button>
+                            <button type="button" onclick="handleFixProduct()">OK</button>
                             <button type="reset">RESET</button>
                             <button>CANCEL</button>
                         </td>
@@ -407,7 +406,7 @@
         </form>
     </div>
 
-    <script src="classMacbook.js"></script>
+    <script src="caseStudy.js"></script>
 </body>
 
 </html>

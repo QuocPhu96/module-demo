@@ -98,7 +98,6 @@ function drawProducts() {
         <div class="muaNgay">
                 <button class="nutMua">Mua Ngay</button>
         </div>
-
     </div>
         `
     }
@@ -111,8 +110,8 @@ function handleaddproductClick(){
     document.getElementsByClassName('input-table')[0].style.display = "block";
 }
 function handleAddProduct(){
+    console.log(1);
     let errors = [];
-    d
     let photo = document.getElementById('addPhoto').value;
     let discount = +document.getElementById('addDiscount').value;
     let price = +document.getElementById('priceProduct').value;
@@ -147,8 +146,9 @@ function handleAddProduct(){
         }
         let p = new Product(id,photo, discount, price, name, configuration1);
         products.push(p);
+        
         // function handleaddproductClick(){
-        //     document.getElementsByClassName('input-table')[0].style.display = "none";}
+            document.getElementsByClassName('input-table')[0].style.display = "none";
             drawProducts();
     }
 }
@@ -237,4 +237,3 @@ function handleDeleteClick(id){
         drawProducts();
     }
 }
-
