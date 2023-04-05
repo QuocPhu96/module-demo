@@ -243,7 +243,8 @@
     .fix-table {
         display: none;
     }
-    .add-form{
+
+    /* .add-form{
         
         top: 0;
         left: 0;
@@ -251,7 +252,7 @@
         background-color: gray;
         opacity: 0.8;
         display: none;
-    }
+    } */
 </style>
 
 <body>
@@ -327,75 +328,81 @@
     </div>
     <div class="add-form" style="width: 100%;height: 100%;">
         <div style="margin: auto;">
-        <form action="" method="submit">
-            <table border="1" class="input-table" style=" background-color: red; display: table;">
-                <thead>
-                    <th colspan="2">Bảng Thêm Sản Phẩm</th>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Photo</td>
-                    <td><input id="addPhoto" type="text" required oninvalid="this.setCustomValidity('Trường này không được để trống')"></td>
-                </tr>
-                <tr>
-                    <td>Discount</td>
-                    <td><input id="addDiscount" type="number"></td>
-                </tr>
-                <tr>
-                    <td>Tên sản phẩm</td>
-                    <td><input id="nameProduct" type="text"></td>
-                </tr>
-                <tr>
-                    <td>Cấu hình sản phẩm </td>
-                    <td><input id="configuration1" type="text"></td>
-                </tr>
-                <tr>
-                    <td>Giá sản phẩm</td>
-                    <td><input id="priceProduct" type="number"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button onclick="handleAddProduct()" id="handleaddProduct" type="submit"  >add</button>
-                        <button type="reset">RESET</button>
-                        <button onclick="closeTable()">CANCEL</button>
-                    </td>
-                </tr>
-            </tbody>
-            </table>
-        </form>
+            <form action="" method="submit" class="input-table">
+                <table border="1">
+                    <thead>
+                        <th colspan="2">Bảng Thêm Sản Phẩm</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Photo</td>
+                            <td><input id="addPhoto" type="text" required
+                                    oninvalid="this.setCustomValidity('Trường này không được để trống')"></td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td><input id="addDiscount" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Tên sản phẩm</td>
+                            <td><input id="nameProduct" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Cấu hình sản phẩm </td>
+                            <td><input id="configuration1" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Giá sản phẩm</td>
+                            <td><input id="priceProduct" type="number"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button onclick="handleAddProduct()" id="handleaddProduct" type="submit">add</button>
+                                <button type="reset">RESET</button>
+                                <button onclick="closeTable()">CANCEL</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
         </div>
     </div>
     <div>
         <form action="">
             <table border="1" class="fix-table">
-                <input type="hidden" id="idFix" />
-                <tr>
-                    <td>Photo</td>
-                    <td><input id="fix-photo" type="text"></td>
-                </tr>
-                <tr>
-                    <td>Discount</td>
-                    <td><input id="fix-discount" type="number"></td>
-                </tr>
-                <tr>
-                    <td>Giá sản phẩm</td>
-                    <td><input id="fix-price" type="number"></td>
-                </tr>
-                <tr>
-                    <td>Tên sản phẩm</td>
-                    <td><input id="fix-name" type="text"></td>
-                </tr>
-                <tr>
-                    <td>Cấu hình sản phẩm </td>
-                    <td><input id="fix-configuration1" type="text"></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button onclick="handleFixProduct()">OK</button>
-                        <button type="reset">RESET</button>
-                        <button>CANCEL</button>
-                    </td>
-                </tr>
+                <thead>
+                    <th colspan="2">Bảng Thêm Sửa Phẩm</th>
+                </thead>
+                <tbody>
+                    <input type="hidden" id="idFix" />
+                    <tr>
+                        <td>Photo</td>
+                        <td><input id="fix-photo" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td><input id="fix-discount" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Giá sản phẩm</td>
+                        <td><input id="fix-price" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Tên sản phẩm</td>
+                        <td><input id="fix-name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Cấu hình sản phẩm </td>
+                        <td><input id="fix-configuration1" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="handleFixProduct()">OK</button>
+                            <button type="reset">RESET</button>
+                            <button>CANCEL</button>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </form>
     </div>
